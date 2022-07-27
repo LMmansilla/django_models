@@ -26,3 +26,6 @@ def anionacimiento(request, edad):
 
 def plantilla(request):
     return render(request, "plantilla.html", context= {})
+
+
+    
