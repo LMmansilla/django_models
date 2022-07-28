@@ -7,8 +7,8 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>HOLA HOLA {{nombre}}</h1>
-    <h2>{{nombre}} {{apellido}}</h2>
-    <h3>hoy es {{today}}</h3>
+    {% for elemento in lista %}
+    <h1>{{elemento}}</h1>
+    {% endfor %}
   </body>
 </html>
