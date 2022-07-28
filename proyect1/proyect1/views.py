@@ -7,5 +7,9 @@ def saludo(request):
     return HttpResponse("Hola Mundo!!")
 
 def desafio(request):
-    return render(request, "desafio.html", context={})
+    context = {
+        'nombre' : 'juan',
+        'apellido' : 'Perez'
+    }
+    return render(request, "desafio.html", context = context)
 
