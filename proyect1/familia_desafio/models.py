@@ -1,6 +1,6 @@
 from django.db import models
 
-class familia_desafio(models.Model):
+class Familia_desafio(models.Model):
     nombre = models.CharField(max_length= 50)
     apellido = models.CharField(max_length= 50)
     dni = models.IntegerField(default="unknow")
