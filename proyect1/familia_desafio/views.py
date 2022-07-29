@@ -16,7 +16,7 @@ def creacion_integrantes(request):
     return render(request, "datos-familia.html", context=context)
 
 def todos(request):
-    todos_los_integrantes = Familia_desafio.object.all()
+    todos_los_integrantes = Familia_desafio.objects.all()
     context = {
         "personas" : todos_los_integrantes
     }
